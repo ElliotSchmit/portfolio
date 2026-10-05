@@ -723,8 +723,11 @@ a {
 }
 
 .header {
-  padding: var(--spacing-md);
+  padding: var(--spacing-md) 0;
   background: var(--color-bg-secondary);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .header .wrapper {
   position: relative;
@@ -740,6 +743,11 @@ a {
   flex-direction: column;
   align-items: flex-end;
   z-index: 2;
+}
+.nav-primary a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 .nav-primary .socials {
   list-style: none;
